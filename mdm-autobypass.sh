@@ -1,8 +1,8 @@
+# Latest script = https://github.com/skipmdm-phoenixbot/skipmdm.com/blob/main/Autobypass-mdm.sh
+
+# Following is backed up from commit ID = 74d4d8c (https://github.com/skipmdm-phoenixbot/skipmdm.com/blob/74d4d8cb912182f821fac92db4fede108fe25212/Autobypass-mdm.sh)
+
 #!/bin/bash
-
-# Backed up from commit ID = 74d4d8c
-# https://github.com/skipmdm-phoenixbot/skipmdm.com/blob/main/Autobypass-mdm.sh
-
 
 # Global constants
 readonly DEFAULT_SYSTEM_VOLUME="Macintosh HD"
