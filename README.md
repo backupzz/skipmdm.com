@@ -16,65 +16,65 @@ _***Disclaimer***_
 	2. Format the disk completely using disk utility
 	3. Shutdown the device
 3. **OS installation**
-	6. Enter Recovery mode - 2nd time
-	7. Connect device to the internet to download the recovery mode software
-	7. Once downloaded, install the latest available OS
-	8. After the OS has been installed completely, shutdown
-	9. If the machine restarts automatically and reaches the Country selection page, force shutdown the device at this stage
-10. **Performing MDM Auto-by-pass**
-	11. Enter Recovery mode - 3rd time
-	11. Open the browser - S@F@R!
-		12. Goto this URL - `https://github.com/backupzz/skipmdm.com`
-		12. Copy the following - `curl https://raw.githubusercontent.com/backupzz/skipmdm.com/main/mdm-autobypass.sh -o mdm-autobypass.sh && chmod +x ./mdm-autobypass.sh && ./mdm-autobypass.sh`
-		13. Exit out of the browser
-	14. Open the CLI - T3RMIN@L
-		15. Paste the contents from the clipboard
-		16. Follow the steps
-		17. When done either type `reboot` or shutdown the device
-18. Let the device start at this time
-19. **New user account creation**
-	20. Once the boot process is complete
-	20. Create a new user account
-	21. Logout from the current/temporary account
-	22. Login via the new username
-	23. Delete the temporary account
-	24. Shutdown
-25. **Disable CSR Utility**
-	26. Enter Recovery mode - 4th time
-	26. Open the CLI - T3RMIN@L
-	27. Type to disable SIP: `csrutil disable`
-	28. When done either type `reboot` or restart the device
-25. Login using the newly created username
+	1. Enter Recovery mode - 2nd time
+	2. Connect device to the internet to download the recovery mode software
+	3. Once downloaded, install the latest available OS
+	4. After the OS has been installed completely, shutdown
+	5. If the machine restarts automatically and reaches the Country selection page, force shutdown the device at this stage
+4. **Performing MDM Auto-by-pass**
+	1. Enter Recovery mode - 3rd time
+	2. Open the browser - S@F@R!
+		1. Goto this URL - `https://github.com/backupzz/skipmdm.com`
+		2. Copy the following - `curl https://raw.githubusercontent.com/backupzz/skipmdm.com/main/mdm-autobypass.sh -o mdm-autobypass.sh && chmod +x ./mdm-autobypass.sh && ./mdm-autobypass.sh`
+		3. Exit out of the browser
+	3. Open the CLI - T3RMIN@L
+		1. Paste the contents from the clipboard
+		2. Follow the steps
+		3. When done either type `reboot` or shutdown the device
+5. Let the device start at this time
+6. **New user account creation**
+	1. Once the boot process is complete
+	2. Create a new user account
+	3. Logout from the current/temporary account
+	4. Login via the new username
+	5. Delete the temporary account
+	6. Shutdown
+7. **Disable CSR Utility**
+	1. Enter Recovery mode - 4th time
+	2. Open the CLI - T3RMIN@L
+	3. Type to disable SIP: `csrutil disable`
+	4. When done either type `reboot` or restart the device
+8. Login using the newly created username
 
-26.  **Fix - MDM-Profile**
-	27. Goto this URL - `https://github.com/backupzz/skipmdm.com`
-	27. Copy the following - `curl https://raw.githubusercontent.com/backupzz/skipmdm.com/main/mdm-config.sh -o mdm-config.sh && chmod +x ./mdm-config.sh && ./mdm-config.sh`
-	24. Open CLI - T3RMIN@L
-		25. Paste the contents from the clipboard
-		16. Follow the steps
-	17. Reboot the device if performing this step only. Otherwise goto next step
+9.  **Fix - MDM-Profile**
+	1. Goto this URL - `https://github.com/backupzz/skipmdm.com`
+	2. Copy the following - `curl https://raw.githubusercontent.com/backupzz/skipmdm.com/main/mdm-config.sh -o mdm-config.sh && chmod +x ./mdm-config.sh && ./mdm-config.sh`
+	3. Open CLI - T3RMIN@L
+		1. Paste the contents from the clipboard
+		2. Follow the steps
+	4. Reboot the device if performing this step only. Otherwise goto next step
 
-17. **Fix - MDM-HostFile**
-	18. Goto this URL - `https://github.com/backupzz/skipmdm.com`
-	18. Copy the following - `curl https://raw.githubusercontent.com/backupzz/skipmdm.com/main/mdm-hostfile.sh -o mdm-hostfile.sh && chmod +x ./mdm-hostfile.sh && ./mdm-hostfile.sh`
-	24. Open CLI - T3RMIN@L
-		25. Paste the contents from the clipboard
-		16. Follow the steps
-	17. Reboot the device if performing this step only. Otherwise goto next step
+10. **Fix - MDM-HostFile**
+	1. Goto this URL - `https://github.com/backupzz/skipmdm.com`
+	2. Copy the following - `curl https://raw.githubusercontent.com/backupzz/skipmdm.com/main/mdm-hostfile.sh -o mdm-hostfile.sh && chmod +x ./mdm-hostfile.sh && ./mdm-hostfile.sh`
+	3. Open CLI - T3RMIN@L
+		1. Paste the contents from the clipboard
+		2. Follow the steps
+	4. Reboot the device if performing this step only. Otherwise goto next step
 
-18. **Disable Device Enrollment Notification**
-	19. Goto this URL - `https://github.com/backupzz/skipmdm.com`
-	18. Copy the following - `sudo open /System/Applications/TextEdit.app /System/Library/LaunchDaemons/com.apple.ManagedClient.enroll.plist`
-	24. To edit `com.apple.ManagedClient.enroll.plist`
-		25. Open CLI - T3RMIN@L
-			25. Paste the contents from the clipboard
-			26. change
- 			27. `<true/>` under `<key>com.apple.ManagedClient.enroll</key>`
- 			28. to
- 			29. `<false/>`
- 			30. Reboot the device if performing this step only. Otherwise goto next step
+11. **Disable Device Enrollment Notification**
+	1. Goto this URL - `https://github.com/backupzz/skipmdm.com`
+	12. Copy the following - `sudo open /System/Applications/TextEdit.app /System/Library/LaunchDaemons/com.apple.ManagedClient.enroll.plist`
+	23. To edit `com.apple.ManagedClient.enroll.plist`
+		1. Open CLI - T3RMIN@L
+		2. Paste the contents from the clipboard
+		3. change
+		4. `<true/>` under `<key>com.apple.ManagedClient.enroll</key>`
+		5. to
+		6. `<false/>`
+		7. Reboot the device if performing this step only. Otherwise goto next step
 
-30. Reboot the device
+12. **Reboot** the device
 
 
 
