@@ -23,7 +23,7 @@ _***Disclaimer***_
 	5. If the machine restarts automatically and reaches the Country selection page, force shutdown the device at this stage
 4. **Performing MDM Auto-by-pass**
 	1. Enter Recovery mode - 3rd time
-	2. Open the browser - S@F@R!
+	2. Open the internet browser - S@F@R!
 		1. Goto this URL - `https://github.com/backupzz/skipmdm.com`
 		2. Copy the following - `curl https://raw.githubusercontent.com/backupzz/skipmdm.com/main/mdm-autobypass.sh -o mdm-autobypass.sh && chmod +x ./mdm-autobypass.sh && ./mdm-autobypass.sh`
 		3. Exit out of the browser
