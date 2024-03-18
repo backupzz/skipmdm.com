@@ -12,12 +12,12 @@ _***Disclaimer***_
 
 1. Shutdown the device
 2. **Initial Disk Format**
-	3. Enter Recovery mode - 1st time
-	3. Format the disk completely using disk utility
-	4. Shutdown the device
-5. **OS installation**
+	1. Enter Recovery mode - 1st time
+	2. Format the disk completely using disk utility
+	3. Shutdown the device
+3. **OS installation**
 	6. Enter Recovery mode - 2nd time
-	6. Connect device to the internet to download the recovery mode software
+	7. Connect device to the internet to download the recovery mode software
 	7. Once downloaded, install the latest available OS
 	8. After the OS has been installed completely, shutdown
 	9. If the machine restarts automatically and reaches the Country selection page, force shutdown the device at this stage
