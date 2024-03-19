@@ -10,3 +10,5 @@ grep -qxF '0.0.0.0 iprofiles.apple.com' /etc/hosts || echo "0.0.0.0 iprofiles.ap
 grep -qxF '0.0.0.0 mdmenrollment.apple.com' /etc/hosts || echo "0.0.0.0 mdmenrollment.apple.com" >> /etc/hosts
 
 echo -e "Successfully blocked hosts\n"
+
+cat /etc/hosts
