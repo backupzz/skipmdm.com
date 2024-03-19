@@ -11,4 +11,4 @@ grep -qxF '0.0.0.0 mdmenrollment.apple.com' /etc/hosts || echo "0.0.0.0 mdmenrol
 
 echo -e "Successfully blocked hosts\n"
 
-cat /etc/hosts
+command cat /etc/hosts
