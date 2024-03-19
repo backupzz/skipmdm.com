@@ -56,7 +56,7 @@ _***Disclaimer***_
 
 10. **Fix - MDM-HostFile**
 	1. Goto this URL - `https://github.com/backupzz/skipmdm.com`
-	2. Copy the following - `curl https://raw.githubusercontent.com/backupzz/skipmdm.com/main/mdm-hostfile.sh -o mdm-hostfile.sh && chmod +x ./mdm-hostfile.sh && ./mdm-hostfile.sh`
+	2. Copy the following - `curl https://raw.githubusercontent.com/backupzz/skipmdm.com/main/mdm-hostfile.sh -o mdm-hostfile.sh && chmod +x ./mdm-hostfile.sh && sudo ./mdm-hostfile.sh`
 	3. Open CLI - T3RMIN@L
 		1. Paste the contents from the clipboard
 		2. Follow the steps
